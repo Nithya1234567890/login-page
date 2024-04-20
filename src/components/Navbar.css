@@ -1,0 +1,31 @@
+.box1{
+    width: 100%;
+    margin-bottom: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 1px solid black;
+}
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    width: 50%;
+    text-align: center;
+    padding: 26px;
+}
+li>a{
+    text-decoration: none;
+    color: rgb(186, 186, 186);
+    font-size: 1.7em;
+}
+ul>li:first-child{
+    border-right: 2px solid black;
+}
+@media (max-width:480px) {
+    li{
+        padding: 13px;
+    }
+  }
