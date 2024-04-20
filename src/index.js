@@ -12,7 +12,7 @@ import Success from './components/Success';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
+    <Route path='/login-page' element={<Layout/>}>
       <Route path='' element={<SignUpPage/>}/>
       <Route path='login/' element={<LoginPage/>}/>
       <Route path='success/' element={<Success/>}/>
