@@ -78,7 +78,7 @@ const SignUp = (props) => {
         </div>
         <div className="box2" style={{alignItems:"center",margin:"30px"}}>
         <button onClick={handleClick}>Sign Up</button>
-        <div style={{marginTop:"20px"}}>Already have an Account? <Link to='login/'>Login here</Link></div>
+        <div style={{marginTop:"20px"}}>Already have an Account? <Link to='/login-page/login/'>Login here</Link></div>
         </div>
     </>
   )
