@@ -8,7 +8,7 @@ const LoginPage = () => {
 
     const handleSign=()=>{
         setSigned(true);
-        navigate('/success/');
+        navigate('/login-page/success/');
     }
   return (
     <>
