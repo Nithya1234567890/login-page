@@ -28,6 +28,22 @@ body{
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width:1450px) {
+  .box{
+    width:40%;
+  }
+  .c-box2{
+    padding: 0 !important;
+  }
+}
+@media (max-width:1000px) {
+  .box{
+    width:50%;
+  }
+  .c-box2{
+    padding: 0 !important;
+  }
+}
 @media (max-width:800px) {
   .box{
     width:70%;
