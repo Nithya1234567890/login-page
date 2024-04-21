@@ -4,7 +4,7 @@ import './Layout.css'
 import { Outlet } from 'react-router-dom'
 import UserContext from '../UserContext'
 
-const Layout = () => {
+const Layout = (props) => {
 
   const {data,setData}=useContext(UserContext);
 
@@ -22,9 +22,9 @@ const Layout = () => {
   return (
     <div className="container1">
       <div className="box">
-        <div className="c-box1">
+        {!(props.signed) && <div className="c-box1">
           <Navbar/>
-        </div>
+        </div>}
           <div className="c-box2">
           <Outlet/>
           </div>
