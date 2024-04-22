@@ -43,7 +43,7 @@ const Login = (props) => {
        </div>
         <div className="box2" style={{alignItems:"center",margin:"30px"}}>
         <button onClick={handleClick}>Log in</button>
-        <div style={{marginTop:"20px"}}>Don't have an Account? <Link to='/login-page'>SignUp here</Link></div>
+        <div className='path' style={{marginTop:"20px"}}>Don't have an Account? <Link to='/login-page'>SignUp here</Link></div>
         </div>
     </>
   )

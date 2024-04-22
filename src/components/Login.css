@@ -44,12 +44,3 @@
     color: red;
     margin: 0;
   }
-  @media (max-width:470px) {
-    button{
-      width: 60% !important;
-    }
-    h1{
-      font-size: 2.3em !important;
-    }
-  }
-  

@@ -5,7 +5,7 @@ import './SignUp.css'
 import { Link } from 'react-router-dom';
 
 const SignUp = (props) => {
-    const namepat=/[\d\W]+/;
+    const namepat=/^[A-Za-z\s.]+$/;
   const {setData}=useContext(UserContext);
   const [value,setValue]=useState("");
   const [passvalue,setPassValue]=useState("");
@@ -24,7 +24,7 @@ const SignUp = (props) => {
       setNer1(true);
       return;
     }
-    if(namepat.test(value)){
+    if(!namepat.test(value)){
       setNer(true);
       return;
     }
@@ -78,7 +78,7 @@ const SignUp = (props) => {
         </div>
         <div className="box2" style={{alignItems:"center",margin:"30px"}}>
         <button onClick={handleClick}>Sign Up</button>
-        <div style={{marginTop:"20px"}}>Already have an Account? <Link to='/login-page/login/'>Login here</Link></div>
+        <div className='path' style={{marginTop:"20px"}}>Already have an Account? <Link to='/login-page/login/'>Login here</Link></div>
         </div>
     </>
   )
