@@ -33,9 +33,9 @@ const Login = (props) => {
     <>
     <h1 style={{fontSize:"3em"}}>Login</h1>
         <div className="box2">
-         {error && <p style={{textAlign:"center"}}>UserName or Password is Incorrect</p>}
-        <label htmlFor="name">UserName</label>
-        <input value={value} onChange={handleOnChange} type="text" id='name' placeholder='Your Name'/>
+         {error && <p style={{textAlign:"center"}}>Email or Password is Incorrect</p>}
+        <label htmlFor="email">Email</label>
+        <input value={value} onChange={handleOnChange} type="text" id='email' placeholder='Your Email'/>
         </div>
        <div className="box2">
        <label htmlFor="pass">PassWord</label>

@@ -6,8 +6,8 @@ const SignUpPage = (props) => {
     const navigate=useNavigate();
 
     const handleSign=()=>{
-        props.setSigned(true);
-        navigate('/login-page/success/');
+        // props.setSigned(true);
+        navigate('/login-page/login/');
     }
   return (
     <>

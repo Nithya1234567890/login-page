@@ -5,7 +5,7 @@ import './SignUp.css'
 import { Link } from 'react-router-dom';
 
 const SignUp = (props) => {
-    const namepat=/^[A-Za-z\s.]+$/;
+    const namepat=/^[^@]+@[^@]+\.[^@]+$/;
   const {setData}=useContext(UserContext);
   const [value,setValue]=useState("");
   const [passvalue,setPassValue]=useState("");
@@ -61,9 +61,9 @@ const SignUp = (props) => {
     <>
     <h1 style={{fontSize:"3em"}}>Sign Up</h1>
         <div className="box2">
-        <label htmlFor="name">UserName</label>
-        <input value={value} onChange={handleOnChange} type="text" id='name' placeholder='Your Name'/>
-        {ner && <p>*Please enter Correct Name</p>}
+        <label htmlFor="email">Email</label>
+        <input value={value} onChange={handleOnChange} type="email" id='email' placeholder='Your Email'/>
+        {ner && <p>*Please enter Correct Email</p>}
         {ner1 && <p>*This field is required</p>}
         </div>
        <div className="box2">
