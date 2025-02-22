@@ -31,7 +31,7 @@ const Login = (props) => {
 
   return (
     <>
-    <h1 style={{fontSize:"3em"}}>Login</h1>
+    <h1 style={{fontSize:"2.5em"}}>Login</h1>
         <div className="box2">
          {error && <p style={{textAlign:"center"}}>Email or Password is Incorrect</p>}
         <label htmlFor="email">Email</label>
@@ -41,9 +41,9 @@ const Login = (props) => {
        <label htmlFor="pass">PassWord</label>
         <input type="password" id='pass' value={passvalue} onChange={handlePassChange} placeholder='Your Password'/>
        </div>
-        <div className="box2" style={{alignItems:"center",margin:"30px"}}>
+        <div className="box2" style={{alignItems:"center",padding:"14px"}}>
         <button onClick={handleClick}>Log in</button>
-        <div className='path' style={{marginTop:"20px"}}>Don't have an Account? <Link to='/login-page'>SignUp here</Link></div>
+        <div className='path' style={{marginTop:"17px"}}>Don't have an Account? <Link to='/login-page'>SignUp here</Link></div>
         </div>
     </>
   )

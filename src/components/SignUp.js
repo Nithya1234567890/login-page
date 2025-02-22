@@ -75,7 +75,7 @@ const SignUp = (props) => {
 
   return (
     <>
-    <h1 style={{fontSize:"3em"}}>Sign Up</h1>
+    <h1 style={{fontSize:"2.5em"}}>Sign Up</h1>
     <div className="box2">
         <label htmlFor="name">Full Name</label>
         <input value={name1} onChange={handleNameChange} type="text" id='name' placeholder='Your Name'/>
@@ -98,9 +98,9 @@ const SignUp = (props) => {
         <input type="password" value={conpassvalue} onChange={handleConPassChange} id='pass1' placeholder='Confirm Password'/>
         {cer && <p>*Password didn't match</p>}
         </div>
-        <div className="box2" style={{alignItems:"center",margin:"30px"}}>
+        <div className="box2" style={{alignItems:"center",padding:"9px"}}>
         <button onClick={handleClick}>Sign Up</button>
-        <div className='path' style={{marginTop:"20px"}}>Already have an Account? <Link to='/login-page/login/'>Login here</Link></div>
+        <div className='path' style={{marginTop:"15x"}}>Already have an Account? <Link to='/login-page/login/'>Login here</Link></div>
         </div>
     </>
   )
