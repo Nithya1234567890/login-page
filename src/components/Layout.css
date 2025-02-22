@@ -16,7 +16,7 @@ body{
 }
 .box{
   font-family: "Courgette", cursive;
-  width: 34%;
+  width: 50%;
   background-color: rgb(120 120 120 / 50%);
   color: white;
   border-radius: 30px;
@@ -32,7 +32,7 @@ body{
 }
 @media (max-width:1450px) {
   .box{
-    width:40%;
+    width:50%;
   }
   .c-box2{
     padding: 0 !important;
@@ -40,7 +40,7 @@ body{
 }
 @media (max-width:1000px) {
   .box{
-    width:50%;
+    width:55%;
   }
   .c-box2{
     padding: 0 !important;
