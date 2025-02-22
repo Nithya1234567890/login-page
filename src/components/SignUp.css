@@ -44,6 +44,9 @@
     margin: 0;
   }
   @media (max-width:470px) {
+    label{
+      font-size: 1.1rem;
+    }
     button{
       width: 60% !important;
       margin-top: 13px !important;
@@ -58,8 +61,8 @@
       width: 75% !important;
     }
     input{
-      font-size: 10px !important;
-        padding: 7px !important;
+      font-size: 14px !important;
+      padding: 12px !important;
     }
     .path{
       margin-top: 10px !important;
